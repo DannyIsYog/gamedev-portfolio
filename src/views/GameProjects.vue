@@ -3,13 +3,13 @@
     <h1>Stuff</h1>
 
     <div style="margin-bottom: 30px;">
-      The following are some stuff I've made or heavily contributed to.
+      The following are some of the game I've made or heavily contributed to as a Game Designer and Programmer.
     </div>
 
     <ProjectsList v-bind:projects="projects" />
 
     <div style="margin-top: 20px;">
-      There is more to see on <a target="_blank" href="https://someexternalwebsite.com">some external website</a>
+      There is more to see on my <a target="_blank" href="https://dannyisyog.itch.io/">Itch.io</a> page.
     </div>
   </div>
 </template>

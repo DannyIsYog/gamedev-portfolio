@@ -3,19 +3,20 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      I'm <strong>John Matrix</strong>, a former Delta Force operative with lots of experience, lots of training and huge muscles.
-      <br />After graduating from kindergarten, I've been enrolled in the army for 25 years, where I learned to destroy things in an amazing number of ways.
-      <br />I joined the Delta Force because I thought it was Greek lessons, but I quickly adapted to this unexpected environment and became a key element.
-      <br />I love teamwork, but I can also go in solo depending on the mission requirements.
-      <br />
-      <br />Right now I'm trying to find inner peace after I've read some personal development books. I'm looking for a monk job so if you have any opportunity feel free to 
-      <router-link to="/contact">contact me</router-link>.
-      <br />
-      <br />Besides war, I'm passionate about firearms, martial arts, explosions, push-ups and flowers.
+      I'm <strong>Fábio Sousa</strong>, a Telecommunications and Computer Engineering student, currently finishing my
+      Master's degree at <a href="https://tecnico.ulisboa.pt/pt/">Instituto Superior Técnico</a>.
+      <br /> During my degree I focused mainly on courses around Distributed Systems, Computer Networks and
+      Cybersecurity. I have also done some courses related to Game Developement and Game Design.
+      <br /> Since 2020 I have been part of <a href="https://gamedev.tecnico.ulisboa.pt/">GameDev Técnico</a>, a student
+      association focused on game development. Here I have developed over 15 games with multidisciplinary teams.
+      <br /> My experience regarding game development is mainly focused on Unity, C# and C++. I have done games both in
+      2D and 3D, and some online and local multiplayer games.
+      <br />I'm looking for a job in the games industry as a Game Designer or Programmer, so if you have any opportunity
+      feel free to <router-link to="/contact">contact me</router-link>.
 
       <div style="margin-top:20px; margin-bottom:20px;">
-        <a class="download-link" href="d/resume-en.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download as PDF 🇬🇧</a>
-        <a class="download-link" href="d/cv-fr.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Télécharger en PDF 🇫🇷</a>
+        <a class="download-link" href="d/resume-en.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i>
+          Download as PDF (Not working rn)</a>
         <div style="clear:both"></div>
       </div>
     </div>
@@ -26,79 +27,107 @@
     <div style="clear:both"></div>
 
     <div class="full-content">
-      <h2>Work experience</h2>
+      <h2>Education</h2>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2018-2019</h4>
+      <h3>Masters in Telecommunications and Computer Engineering - Instituto Superior Técnico</h3>
+      <h4>September 2021 - November 2023</h4>
 
-      <div>It's classified so I can't speak about it.</div>
+      <div>Concluded a Master's Degree in Telecommunications and Computer Engineering at
+        Instituto Superior Técnico, University of Lisbon. Specialized in Distributed Systems and Cybersecurity with
+        complementary courses in Game Design.</div>
 
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <h3>Bachelor's in Telecommunications and Computer Engineering - Instituto Superior Técnico</h3>
+      <h4>September 2018 - July 2021</h4>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2015-2017</h4>
+      <div>Concluded a Bachelor's Degree in Telecommunications and Computer Engineering at
+        Instituto Superior Técnico, University of Lisbon.</div>
 
-      <div>It's classified so I can't speak about it.</div>
+      <h2>Work Experience</h2>
 
-      <div class="tech-stack">Even more Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <h3>GameDev Técnico - Member / Head of Partnerships</h3>
+      <h4>September 2020 - Present</h4>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2012-2015</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <div>GameDev Técnico is an IST organization that is all about the promotion of game development. Its members
+        participate in game jams, sponsored projects, full-blown releases and everything that involves developing games.
+        <br>As the Head of Partnerships I helped the associatin fund it self throught grants and sponsorships
+      </div>
+      <div class="tech-stack">Godot, GDScript, Unity, C#, Aseprite, Audacity, Mirror Networking</div>
 
       <h2>Skills</h2>
 
       <div class="skill-set">
-        <h3>Lethal</h3>
-        <SkillRate name="Handguns" :rate="5" />
-        <SkillRate name="Rifles" :rate="5" />
-        <SkillRate name="Shotguns" :rate="5" />
-        <SkillRate name="Machineguns" :rate="5" />
-        <SkillRate name="Missile launchers" :rate="5" />
-        <SkillRate name="Knives" :rate="5" />
-        <SkillRate name="Hand to hand combat" :rate="5" />
+        <h3>Languages</h3>
+        <SkillRate name="C#" />
+        <SkillRate name="Python" />
+        <SkillRate name="C++" />
+        <SkillRate name="C" />
+        <SkillRate name="SQL" />
+        <SkillRate name="Java" />
+        <SkillRate name="Bash" />
+        <div style="clear:both"></div>
       </div>
 
       <div class="skill-set">
-        <h3>Non-lethal</h3>
-        <SkillRate name="Sneaking" :rate="1" />
-        <SkillRate name="Negotiation" :rate="1" />
-        <SkillRate name="Seduction" :rate="1" />
-        <SkillRate name="Sense of humor" :rate="2" />
+        <h3>Gamedev tools</h3>
+        <SkillRate name="Unity" />
+        <SkillRate name="Godot" />
+        <SkillRate name="Aseprite" />
+        <SkillRate name="Audacity" />
+        <SkillRate name="Mirror Networking" />
+        <SkillRate name="Photon Networking" />
+        <SkillRate name="PyGame" />
+        <div style="clear:both" />
+      </div>
+
+      <div class="skill-set">
+        <h3>Tools & frameworks</h3>
+        <SkillRate name="PostgresSQL" />
+        <SkillRate name="discord-py" />
+        <SkillRate name="AWS" />
+        <SkillRate name="Terraform" />
+        <SkillRate name="Ansible" />
+        <SkillRate name="Android Studio" />
+        <SkillRate name="GNS3" />
+        <SkillRate name="gRPC" />
+        <div style="clear:both" />
+
+        <h2> Organizations </h2>
+        <h3>NEETI - Núcleo de Estudantes de Engenharia de Telecomunicações e Informática - Member</h3>
+        <h4>March 2019 - September 2023</h4>
+
+        <div>NEETI organizes workshops on a wide range of topics, along with cultural and recreational activities.</div>
+
+        <h3>IEEE-IST Student Branch - External Relations Manager</h3>
+        <h4> November 2018 - September 2021</h4>
+
+        <div>The IEEE IST Student Branch emphasizes creating innovative events to address gaps in academic education,
+          including technical skills and
+          internship opportunities.</div>
+
+        <h3>SET - Semana Empresarial e Tecnológica - External Relations Team Member</h3>
+        <h4> October 2018 - March 2020</h4>
+
+        <div>SET - Instituto Superior Técnico's Business and Technological Week has the objective is to bring the
+          academic
+          and business worlds closer
+          together.</div>
+
       </div>
       <div style="clear:both" />
 
-      <h2>Education</h2>
-
-      <h3>Kindergarten - 1985</h3>
-      <h4>Kindergarten degree</h4>
-      <div>Specialty in bullying and fighting (58 wins, 58 K-O, 0 losses)</div>
-
-      <h2>Languages</h2>
-
-      <h3>American</h3>
-      <div>Basic knowledge but I know lots of one-liners</div>
-
-      <h3>That's it</h3>
-      <div>Who needs another language when you speak American?</div>
-
-
-      <h2>Besides...</h2>
+      <h2>Extra...</h2>
       <div>
-        <h3>I ❤️ Violence</h3>
-        <div>I find it really soothing to just shoot at bad guys</div>
+        <h3>🧮 Enthusiastic about exploring the beauty of <strong>Mathematics</strong></h3>
+        <div>because it's a realm where logic and creativity intertwine, much like game development</div>
 
-        <h3>I 🧡 Sports</h3>
-        <div>I used to be thin but then I ingested 10 kilos of steroids and proteins a day while doing 1000 push-ups.</div>
+        <h3>🌌 Passion for delving into the wonders of <strong>Astronomy</strong></h3>
+        <div>as it unveils the mysteries of the universe and ignites a sense of cosmic curiosity and awe.</div>
 
-        <h3>I 💛 Politics</h3>
-        <div>I hope I can have a career here someday but I might have temper issues.</div>
+        <h3>🍽️ A dedicated <strong>Food Enthusiast</strong></h3>
+        <div>with an appetite for savoring the beauty of fine cuisine (and my grandmother's).</div>
 
-        <h3>I 💚 Flowers</h3>
-        <div>Especially the big ones, with the trunk and leaves.</div>
+        <h3>📜 Fascinated by the world of poetry</h3>
+        <div>where the stylistic figures can evoke emotiones that no other form of writing can quite capture.</div>
 
       </div>
     </div>
@@ -125,6 +154,7 @@ h2 {
   padding: 0px;
   padding-top: 50px;
 }
+
 h3 {
   font-weight: 100;
   font-size: 1.6em;
@@ -132,6 +162,7 @@ h3 {
   padding: 0px;
   padding-top: 30px;
 }
+
 h4 {
   font-weight: 100;
   font-size: 1.3em;
@@ -146,7 +177,7 @@ h4 {
 }
 
 .download-link {
-  float:left;
+  float: left;
   margin-right: 50px;
 }
 
@@ -172,7 +203,7 @@ h4 {
   text-align: center;
 }
 
-@media only screen and (min-width: 620px){
+@media only screen and (min-width: 620px) {
   .paragraph {
     float: left;
   }
@@ -185,7 +216,7 @@ h4 {
 
   .skill-set {
     float: left;
-    padding-right: 60px; 
+    padding-right: 60px;
   }
 }
 </style>
