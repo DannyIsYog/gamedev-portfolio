@@ -15,8 +15,8 @@
       feel free to <router-link to="/contact">contact me</router-link>.
 
       <div style="margin-top:20px; margin-bottom:20px;">
-        <a class="download-link" href="d/resume-en.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i>
-          Download as PDF (Not working rn)</a>
+        <a class="download-link" href="d/CV_FabioSousa.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i>
+          Check my CV</a>
         <div style="clear:both"></div>
       </div>
     </div>
@@ -44,13 +44,19 @@
 
       <h2>Work Experience</h2>
 
-      <h3>GameDev Técnico - Member / Head of Partnerships</h3>
+      <h3>GameDev Técnico - President / Game Developer</h3>
       <h4>September 2020 - Present</h4>
 
-      <div>GameDev Técnico is an IST organization that is all about the promotion of game development. Its members
-        participate in game jams, sponsored projects, full-blown releases and everything that involves developing games.
-        <br>As the Head of Partnerships I helped the associatin fund it self throught grants and sponsorships
-      </div>
+      GameDev Técnico is an IST organization that is all about the promotion of game development. Its members
+      participate in game jams, sponsored projects, full-blown releases and everything that involves developing games.
+      <ul>
+        <li>Game Programmer and Game Designer for 2D, 3D, online and local
+          multiplayer games.</li>
+        <li>Published 1 mobile game that is being used in Portuguese Public Schools as a teaching tool on
+          Sustainability.</li>
+        <li>Contributed to an Open Source Voxel Engine in C++.</li>
+        <li>Raised more than 40.000€ to fund all the projects over 3 years.</li>
+      </ul>
       <div class="tech-stack">Godot, GDScript, Unity, C#, Aseprite, Audacity, Mirror Networking</div>
 
       <h2>Skills</h2>
@@ -90,29 +96,59 @@
         <SkillRate name="GNS3" />
         <SkillRate name="gRPC" />
         <div style="clear:both" />
-
-        <h2> Organizations </h2>
-        <h3>NEETI - Núcleo de Estudantes de Engenharia de Telecomunicações e Informática - Member</h3>
-        <h4>March 2019 - September 2023</h4>
-
-        <div>NEETI organizes workshops on a wide range of topics, along with cultural and recreational activities.</div>
-
-        <h3>IEEE-IST Student Branch - External Relations Manager</h3>
-        <h4> November 2018 - September 2021</h4>
-
-        <div>The IEEE IST Student Branch emphasizes creating innovative events to address gaps in academic education,
-          including technical skills and
-          internship opportunities.</div>
-
-        <h3>SET - Semana Empresarial e Tecnológica - External Relations Team Member</h3>
-        <h4> October 2018 - March 2020</h4>
-
-        <div>SET - Instituto Superior Técnico's Business and Technological Week has the objective is to bring the
-          academic
-          and business worlds closer
-          together.</div>
-
       </div>
+
+      <div style="clear:both" />
+      <h2> Organizations </h2>
+      <h3>NEETI - Núcleo de Estudantes de Engenharia de Telecomunicações e Informática - Vice President</h3>
+      <h4>March 2019 - September 2023</h4>
+
+      NEETI organizes workshops on a wide range of topics, along with cultural and recreational activities.
+      <ul>
+        <li>Tutored 1st years students for programming courses</li>
+        <li>Organized workshops in a variety of topics</li>
+      </ul>
+
+      <h3>IEEE-IST Student Branch - Web Developer</h3>
+      <h4> November 2018 - September 2021</h4>
+
+      The IEEE IST Student Branch emphasizes creating innovative events to address gaps in academic education,
+      including technical skills and internship opportunities.
+
+      <ul>
+        <li>Developed and published a website using Python Framworks (Django and Flask).</li>
+        <li>Wrote tutorials on how to develop robots using Raspberry Pi Computers.</li>
+      </ul>
+
+      <h3>SET - Semana Empresarial e Tecnológica - External Relations Team Member</h3>
+      <h4> October 2018 - March 2020</h4>
+
+      SET - Instituto Superior Técnico's Business and Technological Week has the objective is to bring the academic
+      and business worlds closer together
+
+      <ul>
+        <li>Contacted Companies and Speakers to participate in this event and network with university students</li>
+      </ul>
+
+      <h3>LAGE2 - Laboratório de Apoio à Gestão de Atividades Extracurriculares dos Estudantes - Events Team</h3>
+      <h4> September 2018 - September 2020</h4>
+
+      Students Group focused on organising extra-curricular events.
+
+      <ul>
+        <li>Organized Board Game Tournaments.</li>
+      </ul>
+
+      <h3>LGW - Lisbon Games Week - Logistics Team</h3>
+      <h4> 2018 - 2020</h4>
+
+      Biggest Videogame Event in Portugal
+
+      <ul>
+        <li>Visitor Information Support</li>
+        <li>Support in the auditoriums, activities and workshops</li>
+      </ul>
+
       <div style="clear:both" />
 
       <h2>Extra...</h2>

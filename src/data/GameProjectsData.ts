@@ -172,5 +172,100 @@ export default [
     <div class="paragraph center">
         <img class="pc-screenshot" src="https://media.discordapp.net/attachments/711620289913421985/1146846127367409784/Screenshot_1.png?width=1992&height=1325" alt="Cloud Drew Land Screenshot" />
         <img class="pc-screenshot" src="https://media.discordapp.net/attachments/711620289913421985/1146846127879106661/Screenshot_2.png?width=2022&height=1325" alt="Cloud Drew Land Screenshot" />
-    </div>`, "#ffb020")
+    </div>`, "#ffb020"),
+    new ProjectData("feedinov", "Quinta do Vale", "img/projects/feedinov.png", `
+    <div class="paragraph">
+    This week you received a letter from a distant and mysterious relative. The letter informs you that you've inherited a farm, but it seems that things aren't going very well there...
+    Get to work! With Pixel and your new neighbors, help bring the farm back to its former glory. Learn about sustainability, animals and their importance in the world while trying to manage all the components involved!
+    In this game your goal is to manage a farm of animals that have basic needs and achieve a good level of sustainability so that you can sell quality products to market. Keep your animals happy and decorate your farm to your liking!
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/i8bEcw6v6io" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        My Contribuitions for this game :
+        <ul>
+        <li>Game Design</li>
+        <li>Mini Games Design</li>
+        <li>Mini Games Implementation</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        Main features :
+        <ul>
+        <li>Real Time Farm Management</li>
+        <li>4 DifferentAnimals</li>
+        <li>10 Different Minigames</li>
+        <li>25 Narrative Events</li>
+        </ul>
+    </div>
+
+    <div class="paragraph center">
+        <img class="pc-screenshot" src="https://lh3.googleusercontent.com/FtPafrIdncM8748hXjY3uSogKaxUl-tow1VGkx-11Q7ZAnBuun6ouOH69XsmUJuF6kE" alt="Cloud Drew Land Screenshot" />
+        <img class="pc-screenshot" src="https://lh3.googleusercontent.com/aYtlxQDmQcX2xtXCwWGuG6u6hdKb8mvwyVFiPUrZafZlaMGTmZCSK0PRvUJpLzQJZMg" alt="Cloud Drew Land Screenshot" />
+        <img class="pc-screenshot" src="https://lh3.googleusercontent.com/mBh3cKgWxHuGujetiN1lh998eSRCtZGJ7npCmiHS_IB0XE_P-ML9TeVLspX8lzxAfAA" alt="Cloud Drew Land Screenshot" />
+        <img class="pc-screenshot" src="https://lh3.googleusercontent.com/D48Kf7zjQXqZhWh4B14y7wo4cININVcY71Nbmq9LMmQruwG2p91RyOg-yPB0sdtHaQ" alt="Cloud Drew Land Screenshot" />
+        </div>`, "#f07f3e"),
+    new ProjectData("ridingholy", "Riding Holy", "img/projects/ridingholy.png", `
+    <div class="paragraph">
+    Riding Holy is a game about a Priest that kills vampires while performing skateboard tricks.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/BTCVVHV4sKc" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph center">
+        <a href="https://dannyisyog.itch.io/riding-holy" target="_blank"><img src="img/projects/badge-color.svg" alt="Itch.io Badge" /></a>
+    </div>
+    <div class="paragraph">
+        My Contribuitions for this game :
+        <ul>
+        <li>Game Design</li>
+        <li>Combat Design</li>
+        <li>Producer</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        Main features :
+        <ul>
+        <li>Skateboards with different abilities that appeal to a variety of playstyles</li>
+        <li>Tons of enemies</li>
+        <li>All the skateboard tricks you can imagine</li>
+        <li>World buidling based on a skateboard religion</li>
+        </ul>
+    </div>
+
+    <div class="paragraph center">
+        <img class="pc-screenshot" src="https://img.itch.zone/aW1hZ2UvMjE4NzkwMy8xMzE1NjA4MC5wbmc=/794x1000/THINzW.png" alt="Cloud Drew Land Screenshot" />
+        <img class="pc-screenshot" src="https://img.itch.zone/aW1hZ2UvMjE4NzkwMy8xMzE1NjA4Mi5wbmc=/794x1000/VJswLq.png" alt="Cloud Drew Land Screenshot" />
+        </div>`, "#ff5000"),
+    new ProjectData("cubos.", "CUBOS.", "img/projects/cubos.png", `
+        <div class="paragraph">
+        CUBOS. aims to be a simple, but powerful game engine for PC, where everything is made out of voxels.
+
+        It is open source and free to use for any purpose. Written in modern C++ (20) and with data-oriented design in mind, its goal is to be both performant and highly flexible.
+        
+        <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/KfsEuGJDU2I" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="paragraph center">
+            <a href="https://github.com/GameDevTecnico/cubos" target="_blank"><img src="img/projects/github.png" alt="Itch.io Badge" /></a>
+        </div>
+        <div class="paragraph">
+            My Contribuitions for this engine :
+            <ul>
+            <li>Input System (old, it has since been replaced)</li>
+            <li>ECS - Entity Component System (Base)</li>
+            </ul>
+        </div>
+        <div class="paragraph">
+            Main features :
+            <ul>
+            <li>Voxels</li>
+            <li>Destructibility</li>
+            <li>Data-oriented over Object-oriented design - ECS based</li>
+            <li>Built from scratch using C++/OpenGL</li>
+            <li>Open Source (created for the gamedev community!)</li>
+            </ul>
+        </div>`, "#22272e")
 ];
