@@ -12,7 +12,7 @@
         <a href="https://twitter.com/DannyIsYog" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
       </div>
       <div class="footer-right">
-        <a href="mailto:fabio.sousa@tecnico.ulisboa.pt">fabio.sousa@tecnico.ulisboa.pt</a>
+        <a href="mailto:fabio@stitchdev.pt">fabio@stitchdev.pt</a>
       </div>
     </div>
     <div class="footer-bottom">

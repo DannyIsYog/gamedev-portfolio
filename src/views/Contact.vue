@@ -41,7 +41,7 @@
               I'm actively seeking opportunities as a Game Designer or Game Programmer.
               Whether it's a full-time role, contract, or game jam collaboration — let's build something fun.
             </p>
-            <a href="mailto:fabio.sousa@tecnico.ulisboa.pt" class="btn btn-primary">
+            <a href="mailto:fabio@stitchdev.pt" class="btn btn-primary">
               Send me an email <i class="fa fa-paper-plane"></i>
             </a>
           </div>
@@ -58,7 +58,7 @@ export default Vue.extend({
   data() {
     return {
       links: [
-        { label: "Email", value: "fabio.sousa@tecnico.ulisboa.pt", href: "mailto:fabio.sousa@tecnico.ulisboa.pt", icon: "envelope-o", color: "#3d8be8" },
+        { label: "Email", value: "fabio@stitchdev.pt", href: "mailto:fabio@stitchdev.pt", icon: "envelope-o", color: "#3d8be8" },
         { label: "GitHub", value: "github.com/DannyIsYog", href: "https://github.com/DannyIsYog", icon: "github", color: "#e2e8f0" },
         { label: "LinkedIn", value: "linkedin.com/in/fabio-sousa", href: "https://www.linkedin.com/in/f%C3%A1bio-sousa-8aa655196/", icon: "linkedin", color: "#0a66c2" },
         { label: "Itch.io", value: "dannyisyog.itch.io", href: "https://dannyisyog.itch.io/", icon: "gamepad", color: "#fa5c5c" },
