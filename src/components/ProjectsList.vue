@@ -108,6 +108,8 @@ export default Vue.extend({
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   min-height: 380px;
   position: relative;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .featured-card:hover {
