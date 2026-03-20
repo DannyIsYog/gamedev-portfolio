@@ -1,15 +1,16 @@
 <template>
-  <div>
-    <h1>Stuff</h1>
-
-    <div style="margin-bottom: 30px;">
-      The following are some of the game I've made or heavily contributed to as a Game Designer and Programmer.
+  <div class="game-projects">
+    <div class="page-header">
+      <div class="section-label" v-reveal>Portfolio</div>
+      <h1 class="page-title" v-reveal data-delay="60">Game Projects</h1>
+      <p class="page-subtitle" v-reveal data-delay="120">
+        Games I've designed and built — from game jams to shipped products.
+        More on my <a href="https://dannyisyog.itch.io/" target="_blank">Itch.io</a> page.
+      </p>
     </div>
 
-    <ProjectsList v-bind:projects="projects" />
-
-    <div style="margin-top: 20px;">
-      There is more to see on my <a target="_blank" href="https://dannyisyog.itch.io/">Itch.io</a> page.
+    <div class="container">
+      <ProjectsList :projects="projects" />
     </div>
   </div>
 </template>
@@ -21,13 +22,15 @@ import gameProjectsData from "@/data/GameProjectsData.ts";
 
 export default Vue.extend({
   name: "GameProjects",
-  components: {
-    ProjectsList,
-  },
-  data: function () {
-    return {
-      projects: gameProjectsData,
-    };
-  },
+  components: { ProjectsList },
+  data() {
+    return { projects: gameProjectsData };
+  }
 });
 </script>
+
+<style scoped>
+.game-projects {
+  padding-bottom: 80px;
+}
+</style>

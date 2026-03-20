@@ -1,171 +1,298 @@
 <template>
-  <div>
-    <h1>Resume</h1>
-
-    <div class="paragraph">
-      I'm <strong>Fábio Sousa</strong>, a Telecommunications and Computer Engineering student, currently finishing my
-      Master's degree at <a href="https://tecnico.ulisboa.pt/pt/">Instituto Superior Técnico</a>.
-      <br /> During my degree I focused mainly on courses around Distributed Systems, Computer Networks and
-      Cybersecurity. I have also done some courses related to Game Developement and Game Design.
-      <br /> Since 2020 I have been part of <a href="https://gamedev.tecnico.ulisboa.pt/">GameDev Técnico</a>, a student
-      association focused on game development. Here I have developed over 15 games with multidisciplinary teams.
-      <br /> My experience regarding game development is mainly focused on Unity, C# and C++. I have done games both in
-      2D and 3D, and some online and local multiplayer games.
-      <br />I'm looking for a job in the games industry as a Game Designer or Programmer, so if you have any opportunity
-      feel free to <router-link to="/contact">contact me</router-link>.
-
-      <div style="margin-top:20px; margin-bottom:20px;">
-        <a class="download-link" href="d/CV_FabioSousa.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i>
-          Check my CV</a>
-        <div style="clear:both"></div>
+  <div class="resume">
+    <div class="page-header">
+      <div class="section-label" v-reveal>Background</div>
+      <h1 class="page-title" v-reveal data-delay="60">Resume</h1>
+      <p class="page-subtitle" v-reveal data-delay="120">
+        My experience, education, and skills.
+      </p>
+      <div v-reveal data-delay="180" style="margin-top: 20px;">
+        <a class="btn btn-primary" href="d/CV_FabioSousa.pdf" target="_blank">
+          <i class="fa fa-download"></i> Download CV
+        </a>
       </div>
     </div>
-    <div class="photo">
-      <img src="img/resume-photo.png" alt="Photo of John" />
-    </div>
 
-    <div style="clear:both"></div>
+    <div class="resume-layout container">
+      <!-- Left column -->
+      <div class="resume-main">
 
-    <div class="full-content">
-      <h2>Education</h2>
+        <section class="resume-section" v-reveal>
+          <h2 class="resume-section-title"><i class="fa fa-graduation-cap"></i> Education</h2>
 
-      <h3>Masters in Telecommunications and Computer Engineering - Instituto Superior Técnico</h3>
-      <h4>September 2021 - November 2023</h4>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">MSc Telecommunications &amp; Informatics Engineering</h3>
+              <div class="timeline-org"><a href="https://tecnico.ulisboa.pt/pt/" target="_blank">Instituto Superior Técnico, University of Lisbon</a></div>
+              <div class="timeline-date">September 2021 — November 2023</div>
+              <p class="timeline-desc">Focus: Distributed Systems, Cybersecurity. Electives: Game Design, Deep Learning.</p>
+              <p class="timeline-desc">Thesis: Designed and programmed <strong>ELMO</strong> — a social robot playing a cooperative card game across multiple tablets, combining Human-Robot Interaction, UI/UX Design, accessibility, and user research.</p>
+            </div>
+          </div>
 
-      <div>Concluded a Master's Degree in Telecommunications and Computer Engineering at
-        Instituto Superior Técnico, University of Lisbon. Specialized in Distributed Systems and Cybersecurity with
-        complementary courses in Game Design.</div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">BSc Telecommunications &amp; Informatics Engineering</h3>
+              <div class="timeline-org"><a href="https://tecnico.ulisboa.pt/pt/" target="_blank">Instituto Superior Técnico, University of Lisbon</a></div>
+              <div class="timeline-date">September 2018 — July 2021</div>
+              <p class="timeline-desc">Active involvement in extracurriculars, hackathons, game jams, and voluntary work.</p>
+            </div>
+          </div>
+        </section>
 
-      <h3>Bachelor's in Telecommunications and Computer Engineering - Instituto Superior Técnico</h3>
-      <h4>September 2018 - July 2021</h4>
+        <section class="resume-section" v-reveal>
+          <h2 class="resume-section-title"><i class="fa fa-briefcase"></i> Experience</h2>
 
-      <div>Concluded a Bachelor's Degree in Telecommunications and Computer Engineering at
-        Instituto Superior Técnico, University of Lisbon.</div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Developer Relations Engineer</h3>
+              <div class="timeline-org"><a href="https://heroiclabs.com/" target="_blank">Heroic Labs</a> — Remote, based at Unicorn Factory, Lisbon</div>
+              <div class="timeline-date">June 2024 — Present</div>
+              <ul class="timeline-list">
+                <li>Restructured technical documentation for Nakama, Hiro, and Satori using the Diátaxis framework, improving content architecture for thousands of game studios globally — including full docs and development for the Godot SDK.</li>
+                <li>Authored the complete Heroic Cloud documentation suite from scratch after immersing in the platform, segmenting six distinct user types, and mining support tickets for non-obvious pain points.</li>
+                <li>Designed and built developer-facing tools and utilities that reduced onboarding friction and shortened time-to-integration for new studios adopting Nakama.</li>
+                <li>Represented Heroic Labs at Gamescom 2024 and DevGAMM, running live technical demos and developer sessions with prospective studio customers.</li>
+                <li>Built a Nakama MCP Server in Go enabling AI assistants to interact with live backends via natural language — self-initiated, demonstrated to leadership, currently assessed for official customer deployment.</li>
+                <li>Designed and built Haru, a RAG-powered documentation assistant using Pinecone + Voyage AI + Claude API, exposed as an MCP server for Claude Desktop and Cursor.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span class="tag">Go</span>
+                <span class="tag">Python</span>
+                <span class="tag">Claude API</span>
+                <span class="tag">MCP</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Diátaxis</span>
+              </div>
+            </div>
+          </div>
 
-      <h2>Work Experience</h2>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">President &amp; Lead Developer</h3>
+              <div class="timeline-org"><a href="https://gamedev.tecnico.ulisboa.pt/" target="_blank">GameDev Técnico</a> — Student Association, IST</div>
+              <div class="timeline-date">September 2020 — September 2024</div>
+              <ul class="timeline-list">
+                <li>Founded Portugal's most active university game development community from zero — grew to 20+ active members, established governance, mentorship programs, and secured €40,000+ through grants and institutional partnerships.</li>
+                <li>Organised and delivered 15+ developer events (game jams, workshops, knowledge-sharing sessions).</li>
+                <li>Mentored 20+ junior developers through hands-on project work, code review, and technical guidance.</li>
+                <li>Core contributor to CUBOS., an MIT-licensed open-source voxel engine in C++20 (100+ stars, 42 forks): designed and implemented the Input System and Entity-Component System (ECS).</li>
+                <li>Developed and published Quinta do Vale for the Portuguese Government — a sustainability education mobile game deployed in Portuguese public schools, projected to reach 600k+ users by 2026.</li>
+                <li>Personally shipped 19+ games across game jams and independent projects on itch.io.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span class="tag">Unity</span>
+                <span class="tag">Godot</span>
+                <span class="tag">C#</span>
+                <span class="tag">C++</span>
+                <span class="tag">GDScript</span>
+                <span class="tag">Mirror Networking</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <h3>GameDev Técnico - President / Game Developer</h3>
-      <h4>September 2020 - Present</h4>
+        <section class="resume-section" v-reveal>
+          <h2 class="resume-section-title"><i class="fa fa-users"></i> Organizations</h2>
 
-      GameDev Técnico is an IST organization that is all about the promotion of game development. Its members
-      participate in game jams, sponsored projects, full-blown releases and everything that involves developing games.
-      <ul>
-        <li>Game Programmer and Game Designer for 2D, 3D, online and local
-          multiplayer games.</li>
-        <li>Published 1 mobile game that is being used in Portuguese Public Schools as a teaching tool on
-          Sustainability.</li>
-        <li>Contributed to an Open Source Voxel Engine in C++.</li>
-        <li>Raised more than 40.000€ to fund all the projects over 3 years.</li>
-      </ul>
-      <div class="tech-stack">Godot, GDScript, Unity, C#, Aseprite, Audacity, Mirror Networking</div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Head of Partnerships — APVP</h3>
+              <div class="timeline-org">Portuguese Game Dev Association (Part-time)</div>
+              <div class="timeline-date">February 2024 — Present</div>
+              <ul class="timeline-list">
+                <li>Organised the first Portuguese Pavilion in the B2B area at Gamescom 2024, coordinating 10+ studios and institutional partners across logistics, branding, and event scheduling.</li>
+                <li>Manage internationalisation strategy and coordinate member participation in global events (Gamescom, DevGAMM, GDC).</li>
+              </ul>
+            </div>
+          </div>
 
-      <h2>Skills</h2>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Vice President — NEETI</h3>
+              <div class="timeline-date">March 2019 — September 2023</div>
+              <ul class="timeline-list">
+                <li>Tutored 1st year students for programming courses.</li>
+                <li>Organised workshops in a variety of topics.</li>
+              </ul>
+            </div>
+          </div>
 
-      <div class="skill-set">
-        <h3>Languages</h3>
-        <SkillRate name="C#" />
-        <SkillRate name="Python" />
-        <SkillRate name="C++" />
-        <SkillRate name="C" />
-        <SkillRate name="SQL" />
-        <SkillRate name="Java" />
-        <SkillRate name="Bash" />
-        <div style="clear:both"></div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Web Developer — IEEE-IST Student Branch</h3>
+              <div class="timeline-date">November 2018 — September 2021</div>
+              <ul class="timeline-list">
+                <li>Developed and published a website using Django and Flask.</li>
+                <li>Wrote tutorials on robot development with Raspberry Pi.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Logistics — Lisbon Games Week</h3>
+              <div class="timeline-date">2018 — 2020</div>
+              <p class="timeline-desc">Biggest videogame event in Portugal.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="resume-section" v-reveal>
+          <h2 class="resume-section-title"><i class="fa fa-trophy"></i> Events &amp; Recognition</h2>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Spotlight Awards 2025 — Person of the Year Finalist</h3>
+              <div class="timeline-date">2025</div>
+              <p class="timeline-desc">Top 4 nominees at Portugal's premier game industry recognition awards by Game Dev Lisbon.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Gamescom 2024</h3>
+              <div class="timeline-date">2024</div>
+              <p class="timeline-desc">Organised the Portuguese Pavilion (B2B); ran Heroic Labs live technical demos and developer sessions with prospective studio customers.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">DevGAMM Lisbon 2023</h3>
+              <div class="timeline-date">2023</div>
+              <p class="timeline-desc">Showcased CUBOS. open-source voxel engine to industry professionals.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Best Game Award — Global Game Jam 2023</h3>
+              <div class="timeline-date">2023</div>
+              <p class="timeline-desc">Judged by Funcom representatives at the Técnico/Belas-Artes site.</p>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <div class="skill-set">
-        <h3>Gamedev tools</h3>
-        <SkillRate name="Unity" />
-        <SkillRate name="Godot" />
-        <SkillRate name="Aseprite" />
-        <SkillRate name="Audacity" />
-        <SkillRate name="Mirror Networking" />
-        <SkillRate name="Photon Networking" />
-        <SkillRate name="PyGame" />
-        <div style="clear:both" />
-      </div>
+      <!-- Right column: skills -->
+      <aside class="resume-aside">
+        <section class="skill-section" v-reveal>
+          <h2 class="resume-section-title">Programming</h2>
+          <div class="skill-group">
+            <SkillRate name="Python" />
+            <SkillRate name="C#" />
+            <SkillRate name="C++" />
+            <SkillRate name="TypeScript" />
+            <SkillRate name="Go" />
+            <SkillRate name="GDScript" />
+            <SkillRate name="SQL" />
+            <SkillRate name="C" />
+            <SkillRate name="Bash" />
+          </div>
+        </section>
 
-      <div class="skill-set">
-        <h3>Tools & frameworks</h3>
-        <SkillRate name="PostgresSQL" />
-        <SkillRate name="discord-py" />
-        <SkillRate name="AWS" />
-        <SkillRate name="Terraform" />
-        <SkillRate name="Ansible" />
-        <SkillRate name="Android Studio" />
-        <SkillRate name="GNS3" />
-        <SkillRate name="gRPC" />
-        <div style="clear:both" />
-      </div>
+        <section class="skill-section" v-reveal data-delay="60">
+          <h2 class="resume-section-title">AI &amp; Agentic</h2>
+          <div class="skill-group">
+            <SkillRate name="Claude API" />
+            <SkillRate name="MCP Protocol" />
+            <SkillRate name="RAG Pipelines" />
+            <SkillRate name="Prompt Engineering" />
+            <SkillRate name="Pinecone" />
+            <SkillRate name="Voyage AI" />
+          </div>
+        </section>
 
-      <div style="clear:both" />
-      <h2> Organizations </h2>
-      <h3>NEETI - Núcleo de Estudantes de Engenharia de Telecomunicações e Informática - Vice President</h3>
-      <h4>March 2019 - September 2023</h4>
+        <section class="skill-section" v-reveal data-delay="80">
+          <h2 class="resume-section-title">Game Dev</h2>
+          <div class="skill-group">
+            <SkillRate name="Unity" />
+            <SkillRate name="Godot" />
+            <SkillRate name="Unreal Engine 5" />
+            <SkillRate name="Mirror Networking" />
+            <SkillRate name="Photon Networking" />
+            <SkillRate name="Aseprite" />
+            <SkillRate name="PyGame" />
+          </div>
+        </section>
 
-      NEETI organizes workshops on a wide range of topics, along with cultural and recreational activities.
-      <ul>
-        <li>Tutored 1st years students for programming courses</li>
-        <li>Organized workshops in a variety of topics</li>
-      </ul>
+        <section class="skill-section" v-reveal data-delay="120">
+          <h2 class="resume-section-title">Web &amp; SaaS</h2>
+          <div class="skill-group">
+            <SkillRate name="Next.js" />
+            <SkillRate name="FastAPI" />
+            <SkillRate name="Hono" />
+            <SkillRate name="Stripe" />
+            <SkillRate name="PostgreSQL" />
+            <SkillRate name="Docker" />
+          </div>
+        </section>
 
-      <h3>IEEE-IST Student Branch - Web Developer</h3>
-      <h4> November 2018 - September 2021</h4>
+        <section class="skill-section" v-reveal data-delay="140">
+          <h2 class="resume-section-title">Tools &amp; Platforms</h2>
+          <div class="skill-group">
+            <SkillRate name="AWS" />
+            <SkillRate name="Vercel" />
+            <SkillRate name="Railway" />
+            <SkillRate name="Terraform" />
+            <SkillRate name="Ansible" />
+            <SkillRate name="gRPC" />
+          </div>
+        </section>
 
-      The IEEE IST Student Branch emphasizes creating innovative events to address gaps in academic education,
-      including technical skills and internship opportunities.
+        <section class="skill-section" v-reveal data-delay="160">
+          <h2 class="resume-section-title">Languages</h2>
+          <div class="interests">
+            <div class="interest-item">
+              <span class="interest-icon">🇵🇹</span>
+              <span>Portuguese — Native</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">🇬🇧</span>
+              <span>English — Fluent</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">🇯🇵</span>
+              <span>Japanese — Beginner</span>
+            </div>
+          </div>
+        </section>
 
-      <ul>
-        <li>Developed and published a website using Python Framworks (Django and Flask).</li>
-        <li>Wrote tutorials on how to develop robots using Raspberry Pi Computers.</li>
-      </ul>
-
-      <h3>SET - Semana Empresarial e Tecnológica - External Relations Team Member</h3>
-      <h4> October 2018 - March 2020</h4>
-
-      SET - Instituto Superior Técnico's Business and Technological Week has the objective is to bring the academic
-      and business worlds closer together
-
-      <ul>
-        <li>Contacted Companies and Speakers to participate in this event and network with university students</li>
-      </ul>
-
-      <h3>LAGE2 - Laboratório de Apoio à Gestão de Atividades Extracurriculares dos Estudantes - Events Team</h3>
-      <h4> September 2018 - September 2020</h4>
-
-      Students Group focused on organising extra-curricular events.
-
-      <ul>
-        <li>Organized Board Game Tournaments.</li>
-      </ul>
-
-      <h3>LGW - Lisbon Games Week - Logistics Team</h3>
-      <h4> 2018 - 2020</h4>
-
-      Biggest Videogame Event in Portugal
-
-      <ul>
-        <li>Visitor Information Support</li>
-        <li>Support in the auditoriums, activities and workshops</li>
-      </ul>
-
-      <div style="clear:both" />
-
-      <h2>Extra...</h2>
-      <div>
-        <h3>🧮 Enthusiastic about exploring the beauty of <strong>Mathematics</strong></h3>
-        <div>because it's a realm where logic and creativity intertwine, much like game development</div>
-
-        <h3>🌌 Passion for delving into the wonders of <strong>Astronomy</strong></h3>
-        <div>as it unveils the mysteries of the universe and ignites a sense of cosmic curiosity and awe.</div>
-
-        <h3>🍽️ A dedicated <strong>Food Enthusiast</strong></h3>
-        <div>with an appetite for savoring the beauty of fine cuisine (and my grandmother's).</div>
-
-        <h3>📜 Fascinated by the world of poetry</h3>
-        <div>where the stylistic figures can evoke emotiones that no other form of writing can quite capture.</div>
-
-      </div>
+        <section class="skill-section" v-reveal data-delay="200">
+          <h2 class="resume-section-title">Interests</h2>
+          <div class="interests">
+            <div class="interest-item">
+              <span class="interest-icon">🧮</span>
+              <span>Mathematics</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">🌌</span>
+              <span>Astronomy</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">🍽️</span>
+              <span>Food &amp; Cuisine</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">📜</span>
+              <span>Poetry</span>
+            </div>
+          </div>
+        </section>
+      </aside>
     </div>
   </div>
 </template>
@@ -173,86 +300,170 @@
 <script lang="ts">
 import Vue from "vue";
 import SkillRate from "@/components/SkillRate.vue";
-
 export default Vue.extend({
   name: "Resume",
-  components: {
-    SkillRate,
-  },
+  components: { SkillRate }
 });
 </script>
 
 <style scoped>
-h2 {
-  font-weight: 100;
-  font-size: 2em;
-  margin: 0px;
-  padding: 0px;
-  padding-top: 50px;
+.resume {
+  padding-bottom: 80px;
 }
 
-h3 {
-  font-weight: 100;
-  font-size: 1.6em;
-  margin: 0px;
-  padding: 0px;
-  padding-top: 30px;
+.resume-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  padding-bottom: 40px;
 }
 
-h4 {
-  font-weight: 100;
-  font-size: 1.3em;
-  margin: 0px;
-  padding: 0px;
-  padding-top: 15px;
+/* Section titles */
+.resume-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resume-section-title i {
+  color: var(--accent);
+}
+
+.resume-section {
+  margin-bottom: 48px;
+}
+
+/* Timeline */
+.timeline-item {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 0 20px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 20px;
+  bottom: -32px;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--bg-base);
+  margin-top: 3px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-body {
+  padding-bottom: 8px;
+}
+
+.timeline-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.timeline-org {
+  margin-bottom: 4px;
+}
+
+.timeline-org a {
+  color: var(--accent);
+  font-size: 0.875rem;
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
   font-style: italic;
 }
 
-.paragraph {
-  max-width: 700px;
+.timeline-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0 0 12px;
+  line-height: 1.65;
 }
 
-.download-link {
-  float: left;
-  margin-right: 50px;
+.timeline-list {
+  margin: 0 0 12px;
+  padding-left: 20px;
 }
 
-.full-content div {
-  max-width: 800px;
+.timeline-list li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 6px 0;
+  line-height: 1.6;
 }
 
-.skill-set h3 {
-  padding-bottom: 10px;
+.timeline-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
 }
 
-.photo img {
-  height: 300px;
-  width: 300px;
+/* Skills aside */
+.skill-section {
+  margin-bottom: 36px;
 }
 
-.tech-stack {
-  font-style: italic;
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
-.photo {
-  margin-top: 50px;
-  text-align: center;
+/* Interests */
+.interests {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-@media only screen and (min-width: 620px) {
-  .paragraph {
-    float: left;
-  }
+.interest-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
 
-  .photo {
-    float: left;
-    padding: 30px;
-    padding-left: 80px;
-  }
+.interest-icon {
+  font-size: 1.1rem;
+}
 
-  .skill-set {
-    float: left;
-    padding-right: 60px;
+@media (min-width: 960px) {
+  .resume-layout {
+    grid-template-columns: 1fr 300px;
+    align-items: start;
   }
 }
 </style>

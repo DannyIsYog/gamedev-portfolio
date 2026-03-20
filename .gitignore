@@ -1,9 +1,14 @@
+# OS
 .DS_Store
+**/.DS_Store
+
+# Dependencies
 node_modules
+
+# Build output
 /dist
 
-
-# local env files
+# Local env files
 .env.local
 .env.*.local
 
@@ -21,3 +26,14 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code
+.claude/
+memory/
+
+# CV source files (served copies live in public/d/)
+/CV_*.pdf
+/CV_*.docx
+/*.jpg
+/*.jpeg
+/*.png
