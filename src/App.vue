@@ -29,18 +29,17 @@ export default Vue.extend({
 
 :root {
   --bg-base:       #07090f;
-  --bg-surface:    #0d1117;
-  --bg-card:       #111827;
-  --bg-card-hover: #1a2236;
-  --accent:        #818cf8;
-  --accent-dim:    rgba(129, 140, 248, 0.12);
-  --accent-glow:   rgba(129, 140, 248, 0.25);
-  --cyan:          #22d3ee;
+  --bg-surface:    #0a1018;
+  --bg-card:       #0d1525;
+  --bg-card-hover: #132040;
+  --accent:        #3d8be8;
+  --accent-dim:    rgba(61, 139, 232, 0.10);
+  --accent-glow:   rgba(61, 139, 232, 0.24);
   --text:          #e2e8f0;
-  --text-muted:    #8b9dc3;
-  --text-faint:    #4a5a7a;
-  --border:        rgba(255, 255, 255, 0.06);
-  --border-accent: rgba(129, 140, 248, 0.2);
+  --text-muted:    #7a95b8;
+  --text-faint:    #2d4060;
+  --border:        rgba(255, 255, 255, 0.05);
+  --border-accent: rgba(61, 139, 232, 0.22);
   --nav-h:         72px;
   --radius:        12px;
   --radius-sm:     8px;
@@ -141,7 +140,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background: #a5b4fc;
+  background: #5ea8f5;
   opacity: 1;
   transform: translateY(-1px);
   box-shadow: 0 8px 24px var(--accent-glow);

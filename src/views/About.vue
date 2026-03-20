@@ -305,7 +305,7 @@ export default Vue.extend({
 .hero-glow-1 {
   width: 600px;
   height: 600px;
-  background: rgba(129, 140, 248, 0.15);
+  background: rgba(30, 80, 180, 0.30);
   top: -100px;
   left: -100px;
   animation: float1 12s ease-in-out infinite;
@@ -314,7 +314,7 @@ export default Vue.extend({
 .hero-glow-2 {
   width: 500px;
   height: 500px;
-  background: rgba(34, 211, 238, 0.08);
+  background: rgba(61, 139, 232, 0.10);
   bottom: -80px;
   right: -80px;
   animation: float2 16s ease-in-out infinite;
@@ -407,7 +407,7 @@ export default Vue.extend({
   height: 320px;
   opacity: 0.2;
   animation: spin 30s linear infinite reverse;
-  background: conic-gradient(from 90deg, transparent 85%, var(--cyan) 100%);
+  background: conic-gradient(from 90deg, transparent 85%, var(--accent) 100%);
 }
 
 @keyframes spin {

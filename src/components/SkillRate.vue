@@ -18,15 +18,15 @@ export default Vue.extend({
   border-radius: 99px;
   font-size: 0.8rem;
   font-weight: 500;
-  background: rgba(129, 140, 248, 0.08);
+  background: rgba(61, 139, 232, 0.08);
   color: var(--accent);
-  border: 1px solid rgba(129, 140, 248, 0.2);
+  border: 1px solid rgba(61, 139, 232, 0.20);
   letter-spacing: 0.02em;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .skill-tag:hover {
-  background: rgba(129, 140, 248, 0.16);
-  border-color: rgba(129, 140, 248, 0.4);
+  background: rgba(61, 139, 232, 0.15);
+  border-color: rgba(61, 139, 232, 0.40);
 }
 </style>

@@ -58,7 +58,7 @@ export default Vue.extend({
   data() {
     return {
       links: [
-        { label: "Email", value: "fabio.sousa@tecnico.ulisboa.pt", href: "mailto:fabio.sousa@tecnico.ulisboa.pt", icon: "envelope-o", color: "#818cf8" },
+        { label: "Email", value: "fabio.sousa@tecnico.ulisboa.pt", href: "mailto:fabio.sousa@tecnico.ulisboa.pt", icon: "envelope-o", color: "#3d8be8" },
         { label: "GitHub", value: "github.com/DannyIsYog", href: "https://github.com/DannyIsYog", icon: "github", color: "#e2e8f0" },
         { label: "LinkedIn", value: "linkedin.com/in/fabio-sousa", href: "https://www.linkedin.com/in/f%C3%A1bio-sousa-8aa655196/", icon: "linkedin", color: "#0a66c2" },
         { label: "Itch.io", value: "dannyisyog.itch.io", href: "https://dannyisyog.itch.io/", icon: "gamepad", color: "#fa5c5c" },
