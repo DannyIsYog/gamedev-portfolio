@@ -128,15 +128,21 @@ a:hover {
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+              transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
   text-decoration: none;
   border: none;
   outline: none;
 }
 
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: #071018;
 }
 
 .btn-primary:hover {
@@ -203,5 +209,16 @@ a:hover {
 .page-leave-active {
   opacity: 0;
   transform: translateY(-10px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter-active,
+  .page-leave-active {
+    transition: opacity 0.1s ease;
+  }
+  .page-enter,
+  .page-leave-active {
+    transform: none;
+  }
 }
 </style>

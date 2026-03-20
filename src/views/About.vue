@@ -10,7 +10,6 @@
         <div class="hero-bg-overlay"></div>
         <div class="hero-glow hero-glow-1"></div>
         <div class="hero-glow hero-glow-2"></div>
-        <div class="hero-dots"></div>
       </div>
 
       <div class="hero-inner">
@@ -51,43 +50,12 @@
 
         <!-- Right visual -->
         <div class="hero-visual">
-          <div class="hv-ring hv-ring-outer"></div>
-          <div class="hv-ring hv-ring-inner"></div>
           <div class="hv-avatar">
             <img src="img/avatar.png" alt="Fábio Sousa" />
-          </div>
-
-          <!-- Floating stat cards -->
-          <div class="hv-card hv-card-games">
-            <i class="fa fa-gamepad hv-card-icon"></i>
-            <div>
-              <div class="hv-card-num">19+</div>
-              <div class="hv-card-label">Games shipped</div>
-            </div>
-          </div>
-
-          <div class="hv-card hv-card-os">
-            <i class="fa fa-flag hv-card-icon"></i>
-            <div>
-              <div class="hv-card-num">Gamescom</div>
-              <div class="hv-card-label">🇵🇹 Pavilion Organizer</div>
-            </div>
-          </div>
-
-          <div class="hv-card hv-card-jams">
-            <i class="fa fa-users hv-card-icon"></i>
-            <div>
-              <div class="hv-card-num">600k+</div>
-              <div class="hv-card-label">Users reached</div>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="hero-scroll">
-        <span>Scroll to explore</span>
-        <div class="scroll-line"></div>
-      </div>
     </section>
 
     <!-- About section -->
@@ -263,7 +231,7 @@ export default Vue.extend({
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  padding: 80px 24px 120px;
+  padding: 80px 24px;
 }
 
 .hero-bg {
@@ -320,13 +288,6 @@ export default Vue.extend({
   animation: float2 16s ease-in-out infinite;
 }
 
-.hero-dots {
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.035) 1px, transparent 0);
-  background-size: 40px 40px;
-}
-
 @keyframes float1 {
   0%, 100% { transform: translate(0, 0) scale(1); }
   33% { transform: translate(30px, -20px) scale(1.05); }
@@ -358,12 +319,9 @@ export default Vue.extend({
 
 /* ---- Hero visual (right side) ---- */
 .hero-visual {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 340px;
-  height: 340px;
   margin: 0 auto;
   animation: heroIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 }
@@ -373,112 +331,15 @@ export default Vue.extend({
   height: 220px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid var(--border-accent);
-  position: relative;
-  z-index: 2;
+  border: 2px solid var(--border-accent);
   background: var(--bg-card);
+  box-shadow: 0 0 0 6px rgba(61, 139, 232, 0.08), 0 0 56px var(--accent-glow);
 }
 
 .hv-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.hv-ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid var(--border-accent);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hv-ring-inner {
-  width: 260px;
-  height: 260px;
-  opacity: 0.5;
-  animation: spin 18s linear infinite;
-  background: conic-gradient(from 0deg, transparent 85%, var(--accent) 100%);
-}
-
-.hv-ring-outer {
-  width: 320px;
-  height: 320px;
-  opacity: 0.2;
-  animation: spin 30s linear infinite reverse;
-  background: conic-gradient(from 90deg, transparent 85%, var(--accent) 100%);
-}
-
-@keyframes spin {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-/* Floating stat cards */
-.hv-card {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 14px;
-  border-radius: var(--radius-sm);
-  background: rgba(13, 17, 23, 0.88);
-  border: 1px solid var(--border-accent);
-  backdrop-filter: blur(12px);
-  z-index: 4;
-  white-space: nowrap;
-}
-
-.hv-card-icon {
-  font-size: 1.1rem;
-  color: var(--accent);
-  flex-shrink: 0;
-}
-
-.hv-card-num {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: var(--text);
-  line-height: 1.1;
-}
-
-.hv-card-label {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  line-height: 1.2;
-}
-
-.hv-card-games {
-  top: 10px;
-  right: -10px;
-  animation: floatCard1 6s ease-in-out infinite;
-}
-
-.hv-card-os {
-  bottom: 30px;
-  right: -20px;
-  animation: floatCard2 7s ease-in-out infinite 1s;
-}
-
-.hv-card-jams {
-  bottom: 10px;
-  left: -10px;
-  animation: floatCard3 5.5s ease-in-out infinite 0.5s;
-}
-
-@keyframes floatCard1 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-@keyframes floatCard2 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-@keyframes floatCard3 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
 }
 
 @media (min-width: 900px) {
@@ -488,18 +349,13 @@ export default Vue.extend({
   }
 
   .hero-visual {
-    width: 380px;
-    height: 380px;
     margin: 0;
   }
 
   .hv-avatar {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
   }
-
-  .hv-ring-inner  { width: 295px; height: 295px; }
-  .hv-ring-outer  { width: 360px; height: 360px; }
 }
 
 @keyframes heroIn {
@@ -607,34 +463,6 @@ export default Vue.extend({
 .hero-social a:hover {
   color: var(--accent);
   transform: translateY(-2px);
-}
-
-.hero-scroll {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  color: var(--text-faint);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  animation: heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
-}
-
-.scroll-line {
-  width: 1px;
-  height: 48px;
-  background: linear-gradient(to bottom, var(--border-accent), transparent);
-  animation: scrollLine 2s ease-in-out infinite;
-}
-
-@keyframes scrollLine {
-  0%, 100% { opacity: 0.4; transform: scaleY(1); }
-  50% { opacity: 1; transform: scaleY(1.1); }
 }
 
 /* ---- About section ---- */
@@ -907,6 +735,21 @@ export default Vue.extend({
 @media (min-width: 960px) {
   .work-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow-1,
+  .hero-glow-2,
+  .hero-badge-dot {
+    animation: none;
+  }
+  .hero-content,
+  .hero-visual {
+    animation: none;
+  }
+  .hero-bg-photo {
+    will-change: auto;
   }
 }
 </style>
